@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/createNotesFragment">
+
+    <fragment
+        android:id="@+id/createNotesFragment"
+        android:name="com.example.notemate.ui.fragments.CreateNotesFragment"
+        android:label="fragment_create_notes"
+        tools:layout="@layout/fragment_create_notes" >
+        <action
+            android:id="@+id/action_createNotesFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mindMapFragment"
+        android:name="com.example.notemate.ui.fragments.MindMapFragment"
+        android:label="fragment_mind_map"
+        tools:layout="@layout/fragment_mind_map" >
+        <action
+            android:id="@+id/action_mindMapFragment_to_recordingFragment"
+            app:destination="@id/recordingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.notemate.ui.fragments.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_toDoFragment"
+            app:destination="@id/toDoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recordingFragment"
+        android:name="com.example.notemate.ui.fragments.RecordingFragment"
+        android:label="fragment_recording"
+        tools:layout="@layout/fragment_recording" />
+    <fragment
+        android:id="@+id/toDoFragment"
+        android:name="com.example.notemate.ui.fragments.ToDoFragment"
+        android:label="fragment_to_do"
+        tools:layout="@layout/fragment_to_do" >
+        <action
+            android:id="@+id/action_toDoFragment_to_mindMapFragment"
+            app:destination="@id/mindMapFragment" />
+    </fragment>
+</navigation>
