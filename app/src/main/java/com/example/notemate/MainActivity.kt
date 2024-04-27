@@ -20,6 +20,8 @@ import com.example.notemate.ui.fragments.ToDoFragment
 
 
 class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         btnNotes.setOnClickListener {
 
+
             supportFragmentManager.commit {
                 replace<NotesFragment>(R.id.framelayout)
             }
@@ -52,6 +55,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnTodo.setOnClickListener {
+
+
 
             supportFragmentManager.commit {
                 replace<ToDoFragment>(R.id.framelayout)

@@ -25,6 +25,9 @@
             android:id="@+id/btnNotes"
             android:layout_width="22dp"
             android:layout_height="22dp"
+            android:shadowRadius="5"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true"
             android:background="@drawable/notesicon" />
 
         <Space
@@ -36,6 +39,8 @@
             android:id="@+id/btnToDo"
             android:layout_width="22dp"
             android:layout_height="22dp"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true"
             android:background="@drawable/todoicon" />
 
         <Space
